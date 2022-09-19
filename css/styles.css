@@ -125,7 +125,9 @@ body{
     color:  var(--accent-color);
 }
 
-
+.current{
+    color: var(--accent-color);
+}
 
    .current::after{
     position: absolute;
@@ -386,8 +388,7 @@ gap: 10px;
     border-radius:50%;
     fill:currentColor;
     color:#AFB1B8;
-    transition: color var(--transit-dur-and-func);
-    transition: background-color var(--transit-dur-and-func)
+    transition: color var(--transit-dur-and-func), background-color var(--transit-dur-and-func);
 }
 
 .social-list-link:hover{
@@ -419,8 +420,7 @@ gap: 10px;
     height: 92px;
     fill:currentColor;
     color:#AFB1B8;
-    transition: fill var(--transit-dur-and-func);
-    transition: border-color var(--transit-dur-and-func);
+    transition: fill var(--transit-dur-and-func),border-color var(--transit-dur-and-func);
 }
 
 
@@ -512,8 +512,7 @@ color: var(--main-color);
     fill:currentColor;
     color:var(--main-color);
     background-color:rgba(255, 255, 255, 0.1);
-    transition: fill var(--transit-dur-and-func);
-    transition: background-color var(--transit-dur-and-func);
+    transition: fill var(--transit-dur-and-func), background-color var(--transit-dur-and-func);
 }
 
 .social-link-item-footer:hover{
@@ -546,8 +545,7 @@ color: var(--main-color);
     padding: 6px 22px;
     border-radius: 4px;
     border-color:transparent;
-    transition: fill var(--transit-dur-and-func);
-    transition: border-color var(--transit-dur-and-func),background-color var(--transit-dur-and-func),box-shadow var(--transit-dur-and-func);
+    transition: background-color var(--transit-dur-and-func);
 
 }
 
@@ -614,7 +612,7 @@ padding: 63px 24px;
 line-height: 1.5;
 overflow: auto;
 transform: translateY(100%);
-transition: transform var(--transit-dur-and-func);
+transition: transform var(--transit-dur-and-func),background-color var(--transit-dur-and-func);
 
 }
 
@@ -643,7 +641,7 @@ transition: transform var(--transit-dur-and-func);
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
-    transition:opacity var(--transit-dur-and-func);
+    transition:opacity var(--transit-dur-and-func), visibility var(--transit-dur-and-func);
    
     
   }
